@@ -26,17 +26,33 @@
 <p><a href="https://www.linkedin.com/in/joshua-conge/" target="_blank" rel="noopener">LinkedIn</a></p>
 <p>San Diego, California</p></div></div>
 </aside>
-<main>
-<a class="back" href="../projects.html">« All projects</a>
+<main><a class="back" href="../projects.html">« All projects</a>
 <h2>MAE3 N.E.S.S.I.E.</h2>
-<p class="tags" style="color:var(--soft);font:.9rem 'Archivo',Arial,sans-serif">MAE 3, details coming soon</p>
-<div class="soon"><p>The write-up, report, and photos for this project are coming soon.</p></div>
-<!-- When you are ready, replace the box above with sections like this:
-<h3>Overview</h3>
-<p>What the project was and what you did.</p>
-<img src="../img/your-photo.jpg" alt="Describe the photo" style="max-width:100%;border-radius:10px">
-<div class="btns"><a class="fill" href="../files/your-report.pdf">Report (PDF)</a></div>
-Put photos in the img folder and PDFs in the files folder. -->
+<p class="tags" style="color:var(--soft);font:.9rem 'Archivo',Arial,sans-serif">UC San Diego MAE 3 Robot Competition, Spring 2025. Team 27: Joshua Conge, Pranav Ramesh, Isaac Kim, Connor Lin.</p>
+<p>“Nobody Has Ever Seen Such Spectacular Engineering” (N.E.S.S.I.E.) is a remote-controlled, stationary robot with one hook arm. It was built for the competition to collect rings scattered on one side of the table in one minute and place them on the Sun God statue. The robot has four parts: a base arm, a lower arm, an upper arm, and the hook.</p>
+<div class="pair">
+<figure><img src="../img/nessie.jpg" alt="N.E.S.S.I.E. in its starting position, with a blue arm and yellow gears"><figcaption>N.E.S.S.I.E. in its starting position.</figcaption></figure>
+<figure><img src="../img/nessie-cad.jpg" alt="CAD of N.E.S.S.I.E. with the base arm, lower arm, upper arm, and hook labeled"><figcaption>CAD of the final design.</figcaption></figure>
+</div>
+<h3>The design</h3>
+<ul>
+<li><strong>Base arm:</strong> 7 in aluminum tube, geared motor, 3D-printed holder, acrylic base plate, 60:20 mm gears. It rotates the whole arm.</li>
+<li><strong>Lower arm:</strong> 13 in acrylic arms with a geared motor on each side (80:25 mm gears) and cutouts to reduce the torque the motors need.</li>
+<li><strong>Upper arm:</strong> 7.5 in acrylic arm with a 90-degree geared motor, 80:25 mm gears, and an aluminum hook.</li>
+<li><strong>Result:</strong> It scored 2,400 points with 8 rings on the third-highest level. The team’s estimated maximum scoring potential was 3,400 points.</li>
+</ul>
+<h3>My analysis: how much can the lower arm lift?</h3>
+<p>For my individual report I analyzed the lower arm. I drew free body diagrams of the input gears and the arm, then calculated the torque needed to hold the arm level with a load on the hook: about 0.353 N·m, against 0.542 N·m available from the two geared motors (0.271 N·m each, measured in our energy analysis). That gave a torque factor of safety of 1.54.</p>
+<p>From those numbers I predicted the arm could hold about 35 g more on the hook. In the lab test it held about 140 g before stalling, a 75% difference. In the report I traced the gap to simplifications in my model (point masses, hardware lumped into the arm’s center of mass, irregular shapes) and to the two motors producing different torque, with the angled motor stronger.</p>
+<h3>Design process and lessons</h3>
+<ul>
+<li>Risk reduction tests on the base arm showed the heavy arm lifted the output gear off the base plate. The fix was a 3D-printed holder for the steel arm plus a hubcap to keep the gear down.</li>
+<li>A stationary robot with a long reach avoided building a drivetrain and was simple and quick at scoring. The downside was that rings very near or just beyond its reach were hard to get, and its starting position limited its points.</li>
+<li>If I did it again, I’d try a four-bar linkage arm for more stability and smoother control, and test more design iterations early.</li>
+</ul>
+<div class="btns" style="margin:24px 0"><a class="fill" href="../files/MAE3-NESSIE-Report.pdf">Report (PDF)</a><a href="../files/NESSIE-Presentation.pdf">Presentation (PDF)</a><a href="../files/NESSIE-Presentation.pptx">Presentation (PowerPoint)</a></div>
+<h3>Team presentation</h3>
+<div class="strip" tabindex="0" role="region" aria-label="Presentation slides, scroll sideways"><figure><img loading="lazy" src="../img/nessie-slides/slide-01.jpg" alt="Slide 1: Team 27: N.E.S.S.I.E."><figcaption>Team 27: N.E.S.S.I.E.</figcaption></figure><figure><img loading="lazy" src="../img/nessie-slides/slide-02.jpg" alt="Slide 2: N.E.S.S.I.E."><figcaption>N.E.S.S.I.E.</figcaption></figure><figure><img loading="lazy" src="../img/nessie-slides/slide-03.jpg" alt="Slide 3: N.E.S.S.I.E. in practice"><figcaption>N.E.S.S.I.E. in practice</figcaption></figure><figure><img loading="lazy" src="../img/nessie-slides/slide-04.jpg" alt="Slide 4: How N.E.S.S.I.E. works"><figcaption>How N.E.S.S.I.E. works</figcaption></figure><figure><img loading="lazy" src="../img/nessie-slides/slide-06.jpg" alt="Slide 6: Base arm"><figcaption>Base arm</figcaption></figure><figure><img loading="lazy" src="../img/nessie-slides/slide-07.jpg" alt="Slide 7: Lower arm"><figcaption>Lower arm</figcaption></figure><figure><img loading="lazy" src="../img/nessie-slides/slide-08.jpg" alt="Slide 8: Upper arm"><figcaption>Upper arm</figcaption></figure><figure><img loading="lazy" src="../img/nessie-slides/slide-09.jpg" alt="Slide 9: Risk reduction of the base arm"><figcaption>Risk reduction of the base arm</figcaption></figure><figure><img loading="lazy" src="../img/nessie-slides/slide-10.jpg" alt="Slide 10: Free body diagrams of the lower arm"><figcaption>Free body diagrams of the lower arm</figcaption></figure><figure><img loading="lazy" src="../img/nessie-slides/slide-11.jpg" alt="Slide 11: Calculations"><figcaption>Calculations</figcaption></figure><figure><img loading="lazy" src="../img/nessie-slides/slide-12.jpg" alt="Slide 12: Why we chose this design"><figcaption>Why we chose this design</figcaption></figure></div>
 </main>
 </div>
 <footer><span>© 2026 Joshua Conge · <a href="mailto:joshcon2022@gmail.com">joshcon2022@gmail.com</a></span><span>Hand-written in HTML &amp; CSS.</span></footer>
