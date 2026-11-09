@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Joshua Conge’s engineering portfolio">
+<title>Wildfire Hexacopter | Joshua Conge</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚙️</text></svg>">
+</head>
+<body>
+<div class="page">
+<header class="mast">
+  <h1><a href="../index.html">Joshua Conge</a></h1>
+  <p><span class="nb">Mechanical Engineering</span> · <span class="nb">UC San Diego B.S. ’26, M.S. ’27</span> · <span class="nb">Structures, manufacturing &amp; design</span></p>
+  <nav class="top" aria-label="Main"><a href="../index.html">Home</a><a href="../projects.html">Projects</a><a href="../resume.html">Résumé</a></nav>
+</header>
+<div class="layout">
+<aside>
+<div class="box"><div class="box-hd">Navigation</div><ul class="nav"><li><a href="../index.html">Home</a></li><li><a href="../projects.html">Projects</a></li><li><a href="../resume.html">Résumé</a></li></ul></div>
+<div class="box"><div class="box-hd">Projects</div><ul class="nav"><li><a href="../projects/fixture.html">Inspection Fixture</a></li><li><a class="here" href="../projects/hexacopter.html">Wildfire Hexacopter</a></li><li><a href="../projects/pedal-box.html">Baja Pedal Box</a></li><li><a href="../projects/monitor.html">Parasympathetic Monitor</a></li><li><a href="../projects/machined-kinematic-cannon.html">Machined Kinematic Cannon</a></li><li><a href="../projects/mae3-nessie.html">MAE3 N.E.S.S.I.E.</a></li><li><a href="../projects/mae3-pendulum-clock.html">MAE3 Pendulum Clock</a></li></ul></div>
+<div class="box"><div class="box-hd">Contact</div><div class="box-bd">
+<p><a href="mailto:joshcon2022@gmail.com">joshcon2022<br>@gmail.com</a></p>
+<p><a href="https://www.linkedin.com/in/joshua-conge/" target="_blank" rel="noopener">LinkedIn</a></p>
+<p>San Diego, California</p></div></div>
+</aside>
+<main>
+<a class="back" href="../projects.html">« All projects</a>
+
+<ul class="work"><li class="feature">
+      <div>
+        <h2>Wildfire Response Hexacopter</h2>
+        <p class="tags">Vertical Flight Society, Team Mirage, Oct 2025 to Apr 2026. Airframe Lead. Ansys, composite layup, CNC.</p>
+        <p>An electric vertical takeoff and landing aircraft built for wildfire response. Team Mirage is UC San Diego’s entry in the Vertical Flight Society’s sixth annual Design-Build-Vertical Flight student competition, where teams deliver simulated fire suppressant (sandbags) to marked zones. I was one of the team’s two airframe leads, working with Shiwei Zhang under advisor John T. Hwang, and I led the airframe’s structural testing and manufacturing design.</p>
+      </div>
+      <div class="media">
+        <figure class="vid"><video controls playsinline preload="metadata" poster="../img/takeoff-poster.jpg" src="../media/takeoff.mp4">Your browser can’t play this video.</video><figcaption>The aircraft taking off.</figcaption></figure>
+        <div class="specs"><h5>Design values from our design review</h5>
+          <dl><dt>Weight</dt><dd>8.4 kg max takeoff, 7.8 kg empty, thrust-to-weight 1.8</dd>
+          <dt>Propulsion</dt><dd>18 in propellers, 360 kv motors, 6S 7000 mAh battery</dd>
+          <dt>Structure</dt><dd>Carbon fiber tubes, aluminum base plate, PLA joints and connectors</dd>
+          <dt>Targets</dt><dd>11 min endurance, 1 km range, 3 m/s design speed, 5 s takeoff</dd></dl></div>
+      </div>
+      <div>
+        <h5>My part</h5>
+        <ul><li>Tested the airframe structurally with Ansys FEA.</li><li>Developed the fabrication and assembly processes, including composite layups and CNC machining.</li></ul>
+        <h5>What the team built</h5>
+        <ul><li>Arms and legs sized against global buckling, local buckling, and bending. The base plate compared aluminum with plywood and fiberglass, with topology optimization.</li><li>An electromagnetic payload pickup and release, aligned with the aircraft’s center of mass, with fewer moving parts than a mechanical gripper.</li><li>Autonomy on a Pixhawk autopilot with an NVIDIA Jetson running ROS and PX4, tied together by a custom ROS-to-PX4 bridge.</li></ul>
+      </div>
+      <div class="deck"><h5>Design review presentation, March 2026</h5>
+        <div class="strip" tabindex="0" role="region" aria-label="Presentation slides, scroll sideways"><figure><img loading="lazy" src="../img/slides/slide-01.jpg" alt="Slide 1: Title slide"><figcaption>Title slide</figcaption></figure><figure><img loading="lazy" src="../img/slides/slide-07.jpg" alt="Slide 7: Design and performance"><figcaption>Design and performance</figcaption></figure><figure><img loading="lazy" src="../img/slides/slide-08.jpg" alt="Slide 8: Component selection"><figcaption>Component selection</figcaption></figure><figure><img loading="lazy" src="../img/slides/slide-10.jpg" alt="Slide 10: Design process"><figcaption>Design process</figcaption></figure><figure><img loading="lazy" src="../img/slides/slide-11.jpg" alt="Slide 11: Arm and leg optimization, with Ansys buckling and bending results"><figcaption>Arm and leg optimization, with Ansys buckling and bending results</figcaption></figure><figure><img loading="lazy" src="../img/slides/slide-12.jpg" alt="Slide 12: Base plate"><figcaption>Base plate</figcaption></figure><figure><img loading="lazy" src="../img/slides/slide-13.jpg" alt="Slide 13: Payload system"><figcaption>Payload system</figcaption></figure><figure><img loading="lazy" src="../img/slides/slide-14.jpg" alt="Slide 14: Autonomy"><figcaption>Autonomy</figcaption></figure><figure><img loading="lazy" src="../img/slides/slide-15.jpg" alt="Slide 15: Build and manufacturing"><figcaption>Build and manufacturing</figcaption></figure><figure><img loading="lazy" src="../img/slides/slide-17.jpg" alt="Slide 17: Test plan"><figcaption>Test plan</figcaption></figure><figure><img loading="lazy" src="../img/slides/slide-18.jpg" alt="Slide 18: Validation metrics"><figcaption>Validation metrics</figcaption></figure><figure><img loading="lazy" src="../img/slides/slide-20.jpg" alt="Slide 20: Reflections and next steps"><figcaption>Reflections and next steps</figcaption></figure></div></div>
+    </li></ul></main>
+</div>
+<footer><span>© 2026 Joshua Conge · <a href="mailto:joshcon2022@gmail.com">joshcon2022@gmail.com</a></span><span>Hand-written in HTML &amp; CSS.</span></footer>
+</div>
+</body>
+</html>

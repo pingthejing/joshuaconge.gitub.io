@@ -85,3 +85,21 @@ footer{padding:24px 0 40px;border-top:1px solid var(--line);font:.9rem "Archivo"
 .thumb img{display:block;width:100%;height:100%;object-fit:contain;background:#fff}
 [data-view][hidden]{display:none}
 section[data-view] .work h4{font-size:1.35rem}
+
+/* sidebar boxes, fixed column order */
+aside{position:static}
+.box{background:var(--sheet);border:1px solid var(--line);border-radius:10px;margin:0 0 16px;overflow:hidden}
+.box-hd{background:var(--tint);font:700 .9rem "Archivo",Arial,sans-serif;padding:8px 14px;border-bottom:1px solid var(--line)}
+.nav{list-style:none;margin:0;padding:6px 0}.nav li{margin:0}
+.nav a{display:block;padding:5px 14px;font-size:.92rem;line-height:1.35;color:var(--soft);text-decoration:none}
+.nav a:hover{color:var(--accent);background:var(--tint)}
+.nav a.here{color:var(--ink);font-weight:700;box-shadow:inset 3px 0 0 var(--accent)}
+.box-bd{padding:10px 14px;font-size:.92rem;line-height:1.5}
+.box-bd p{margin:0 0 10px;color:var(--ink)}.box-bd p:last-child{margin:0}.box-bd a{color:var(--accent);text-decoration:none}
+.top a.here{background:var(--tint);color:var(--accent)}
+.nb{white-space:nowrap}
+.thumb.ph{display:grid;place-items:center;text-align:center;color:var(--soft);font:.85rem "Archivo",Arial,sans-serif}
+.soon{border:2px dashed var(--line);border-radius:12px;padding:28px;color:var(--soft);background:var(--sheet);max-width:640px}
+.vid video:fullscreen{max-height:none;width:100%;height:100%;object-fit:contain;background:#000}
+footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+@media (max-width:820px){main{order:-1}}

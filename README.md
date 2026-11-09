@@ -1,19 +1,23 @@
 # Joshua Conge's portfolio
 
-A plain HTML and CSS site with no build step.
+Plain HTML and one stylesheet, no build step. Open `index.html` in a browser and that is the site.
 
-## Files
-- `index.html`: home page
-- `fixture.html`, `hexacopter.html`, `monitor.html`, `pedal-box.html`: one page per project
-- `resume.html`: resume
-- `style.css`: all styling
-- `img/` and `media/`: pictures, slides, and the takeoff video
+```
+index.html       front page
+projects.html    index of all projects
+resume.html      résumé
+style.css        the only stylesheet
+img/  media/     pictures, slides, video
+files/           report and résumé PDFs
+projects/        one page per project
+```
 
-## Put it on GitHub Pages
-1. Create a new repository on github.com. For an address like `yourname.github.io`, name it exactly `yourname.github.io`.
-2. Upload everything in this folder to the repository root (drag the files in on the web page, or use git). `index.html` must sit at the top level.
-3. Open Settings, then Pages. Under "Build and deployment", choose "Deploy from a branch", pick `main` and `/ (root)`, and save.
-4. After a minute or two the site is live at `https://yourname.github.io/`, or `https://yourname.github.io/repo-name/` for any other repository name.
+## Adding a project
+1. Copy a file in `projects/`, rename it, and edit the title, tags, and text.
+2. Add its link to the sidebar's Projects list in every page (search for an existing project name to find the spot).
+3. Add a card for it in `projects.html`, and in `index.html` if it belongs in the selected work.
 
-## Editing
-Open any `.html` file in a text editor such as VS Code and change the text. Swap a picture by replacing the file in `img/` with the same name, or edit the `src` in the HTML.
+Photos go in `img/`, PDFs in `files/`.
+
+## Deploying (GitHub Pages)
+Settings, then Pages, then Deploy from a branch, `main`, `/ (root)`. `index.html` must be at the top level of the repository.
