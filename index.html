@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Joshua Conge’s portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚙️</text></svg>">
+</head>
+<body>
+<div class="page" id="top">
+<header class="mast">
+  <h1><a href="index.html">Joshua Conge</a></h1>
+  <p>Mechanical Engineering, UC San Diego B.S. ’26 and M.S. ’27. Structures, manufacturing, and design.</p>
+  <nav class="top" aria-label="Sections"><a href="index.html">Home</a><a href="index.html#work-list">Projects</a><a href="resume.html">Résumé</a><a href="#contact">Contact</a></nav>
+</header>
+
+<div class="layout">
+<main>
+
+  <h2>Hey, I’m Joshua.</h2>
+  <p>I design parts, analyze them, and build them. I finished my B.S. in Mechanical Engineering at UC San Diego in June 2026 and I’m staying on for a master’s in Applied Mechanics, with a minor in Mathematics.</p>
+  <p>I work mostly in <strong>SolidWorks, Onshape, and Ansys</strong>, with <strong>GD&amp;T and Design for Manufacturing</strong> guiding how I draw things. I also fabricate what I design with <strong>TIG welding, laser cutting, CNC, and composite layups</strong>, and I write <strong>MATLAB, C++, and Python</strong> when a project needs code.</p>
+  <p>So far that includes an inspection fixture at <strong>General Atomics</strong>, the airframe of an electric wildfire-response hexacopter with <strong>Team Mirage</strong>, a medical monitoring device for senior design, and a lightweight pedal box for <strong>Triton Baja SAE</strong>.</p>
+
+  <figure class="hero"><img src="img/cad.jpg" alt="CAD render of Team Mirage’s hexacopter with six carbon tube arms, black propellers, a round base plate, and four landing legs"><figcaption>Team Mirage’s final hexacopter design, rendered in CAD.</figcaption></figure>
+
+  <h3>Currently</h3>
+  <table class="now">
+    <tr><th scope="row">Internship</th><td>Manufacturing Project Engineer Intern, <strong>General Atomics Electromagnetics</strong>: inspection fixture design with DFM and GD&amp;T.</td></tr>
+    <tr><th scope="row">School</th><td>M.S. Mechanical Engineering (Applied Mechanics), UC San Diego, expected June 2027. B.S. GPA 3.83.</td></tr>
+    <tr><th scope="row">Licensure</th><td>Engineer-in-Training (EIT), California, September 2026.</td></tr>
+    <tr><th scope="row">Previously</th><td>Airframe Structures &amp; Manufacturing Lead, <strong>Vertical Flight Society</strong>. Driver Interface &amp; Safety Engineer, <strong>Triton Baja SAE</strong>.</td></tr>
+  </table>
+
+  <h3 id="work-list">Selected work</h3>
+<ul class="work">
+<li><div class="thumb"><svg viewBox="0 0 240 150" role="img" aria-label="Inspection fixture drawing">
+        <rect class="f s" x="30" y="95" width="180" height="26" rx="2"/>
+        <rect class="f" x="52" y="62" width="34" height="33"/><rect class="f" x="154" y="62" width="34" height="33"/>
+        <rect class="f s" x="92" y="48" width="56" height="47"/>
+        <circle cx="120" cy="72" r="9"/><path d="M52 40H188M52 34V46M188 34V46"/><path d="M120 24V48" stroke-dasharray="4 3"/></svg></div><div><h4><a href="fixture.html">Inspection Fixture</a></h4><p class="tags">General Atomics Electromagnetics, June 2026 to present. DFM, GD&amp;T, engineering drawings.</p><p>A fixture that positions parts accurately for inspection, designed for manufacturability and repeatable use.</p><p><a class="more" href="fixture.html">View project »</a></p></div></li>
+<li><div class="thumb"><img src="img/cad-thumb.jpg" alt="CAD render of the hexacopter"></div><div><h4><a href="hexacopter.html">Wildfire Response Hexacopter</a></h4><p class="tags">Vertical Flight Society, Team Mirage, Oct 2025 to Apr 2026. Airframe Lead. Ansys, composite layup, CNC.</p><p>An electric VTOL aircraft for wildfire response. I was an airframe lead and led structural testing and manufacturing design.</p><p><a class="more" href="hexacopter.html">View project »</a></p></div></li>
+<li><div class="thumb"><svg viewBox="0 0 240 150" role="img" aria-label="ECG waveform with RR interval">
+        <polyline points="8,92 40,92 50,85 60,92 70,92 76,100 82,34 88,112 94,92 112,92 124,80 138,92 168,92 174,100 180,34 186,112 192,92 214,92 224,85 232,92"/>
+        <path class="s" d="M82 124H180M82 119V129M180 119V129"/><circle class="f s" cx="82" cy="34" r="4"/><circle class="f s" cx="180" cy="34" r="4"/></svg></div><div><h4><a href="monitor.html">Point-of-Care Parasympathetic Monitor</a></h4><p class="tags">UC San Diego MAE 156B senior design. Sponsor: Dr. Stephen Bickler, UC San Diego Health. C++, Arduino, AD8232.</p><p>A portable device that measures heart rate variability during deep breathing and a blood pressure cuff hold.</p><p><a class="more" href="monitor.html">View project »</a></p></div></li>
+<li><div class="thumb"><svg viewBox="0 0 240 150" role="img" aria-label="Pedal box side view">
+        <rect class="f s" x="30" y="118" width="180" height="12" rx="2"/><path class="s" d="M60 118V70H110V118"/>
+        <circle class="f s" cx="85" cy="70" r="7"/><path d="M85 70L70 110M120 70L108 96" stroke-width="5"/>
+        <rect class="f s" x="58" y="108" width="26" height="8" rx="2" transform="rotate(-14 71 112)"/><rect class="f s" x="96" y="94" width="26" height="8" rx="2" transform="rotate(-14 109 98)"/>
+        <circle class="f s" cx="120" cy="70" r="5"/></svg></div><div><h4><a href="pedal-box.html">Baja SAE Pedal Box</a></h4><p class="tags">Triton Baja SAE, Sept 2024 to Oct 2025. SolidWorks, FEA, MATLAB, TIG welding, laser cutting.</p><p>An off-road racing pedal box that came out 12% lighter, then welded and tested.</p><p><a class="more" href="pedal-box.html">View project »</a></p></div></li>
+</ul>
+</main>
+
+<aside id="contact">
+  <h2>Navigation</h2>
+  <ul><li><a href="index.html">Home</a></li><li><a href="index.html#work-list">Projects</a></li><li><a href="resume.html">Résumé</a></li></ul>
+  <h2>Projects</h2>
+  <ul><li><a href="fixture.html">Inspection Fixture</a></li><li><a href="hexacopter.html">Wildfire Hexacopter</a></li><li><a href="monitor.html">Parasympathetic Monitor</a></li><li><a href="pedal-box.html">Baja Pedal Box</a></li></ul>
+  <h2>Contact</h2>
+  <p><a href="mailto:joshcon2022@gmail.com">joshcon2022@gmail.com</a></p>
+  <p><a href="https://www.linkedin.com/in/joshua-conge/" target="_blank" rel="noopener">LinkedIn</a></p>
+  <p>La Jolla and Temecula,<br>California</p>
+</aside>
+</div>
+<footer>© 2026 Joshua Conge. Hand-written in HTML and CSS.</footer>
+</div>
+</body>
+</html>
