@@ -133,3 +133,10 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
 .docs{margin:0 0 16px;padding-left:1.2em}
 .docs li{margin-bottom:6px}
 main hr{border:0;border-top:1px solid var(--line);margin:40px 0 20px}
+
+/* project page "bubble" */
+.card{background:var(--sheet);border:1px solid var(--line);border-radius:14px;padding:clamp(18px,3vw,28px);margin:0 0 18px}
+.card>h2{margin-top:0}
+.card .now{box-shadow:0 0 0 1px var(--line)}
+.card .hero{margin:24px 0 18px}
+.card>*:last-child{margin-bottom:0}
