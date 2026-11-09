@@ -5,7 +5,7 @@ A plain HTML and CSS site with no build step.
 ## Files
 - `index.html`: home page
 - `fixture.html`, `hexacopter.html`, `monitor.html`, `pedal-box.html`: one page per project
-- `resume.html`: résumé
+- `resume.html`: resume
 - `style.css`: all styling
 - `img/` and `media/`: pictures, slides, and the takeoff video
 
