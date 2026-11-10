@@ -28,30 +28,35 @@
 </aside>
 <main>
 <a class="back" href="../projects.html">« Back to projects</a>
-<div class="card">
+
+<ul class="work"><li class="feature">
+<div>
 <h2>MAE3 N.E.S.S.I.E.</h2>
 <p class="lede">A remote-controlled, stationary crane robot for the MAE 3 ring-collecting competition.</p>
-<table class="now">
+<table class="now" style="margin-bottom:16px">
 <tr><th scope="row">Where</th><td>MAE 3, UC San Diego (Team 27)</td></tr>
 <tr><th scope="row">When</th><td>2025</td></tr>
 <tr><th scope="row">Skills</th><td>Fusion 360 CAD, free body diagrams, torque and gear analysis, motor characterization</td></tr>
 <tr><th scope="row">Outcome</th><td>Scored 2,400 of a possible 3,400 points; my lower-arm analysis predicted 35 g of added load and testing held about 140 g</td></tr>
 </table>
-<figure class="hero"><img src="../img/nessie-table.jpg" alt="CAD of the MAE 3 competition table with the green Sun God statue and blue rings"><figcaption>The contest table in CAD: rings around the field, the Sun God statue at the center.</figcaption></figure>
 <p>My team of four (Isaac Kim, Connor Lin, Pranav Ramesh and I) built N.E.S.S.I.E., short for “Nobody Has Ever Seen Such Spectacular Engineering,” for the Spring 2025 MAE 3 robot competition. In one minute, the robot had to collect rings scattered on one side of the table with a hook and place them on the Sun God statue.</p>
+</div>
+<figure class="hero"><img src="../img/nessie-table.jpg" alt="CAD of the MAE 3 competition table with the green Sun God statue and blue rings"><figcaption>The contest table in CAD: rings around the field, the Sun God statue at the center.</figcaption></figure>
+<div>
 <p>Instead of a drivetrain, we gave it reach: a stationary robot with a rotating base, a lower arm, an upper arm and an aluminum hook. The base is 7″ aluminum tubing in a 3D-printed holder, turned through a 60:20 mm gear ratio. The lower arm is a pair of 13″ acrylic arms with a geared motor on each side, and the 7.5″ acrylic upper arm carries the hook.</p>
-<div class="pair equal" style="margin:22px 0">
+<div class="pair equal" style="margin:16px 0">
 <figure><img src="../img/nessie-photo.jpg" alt="N.E.S.S.I.E. in its initial position, with blue acrylic arms and yellow gears"><figcaption>N.E.S.S.I.E. in its initial position.</figcaption></figure>
 <figure><img src="../img/nessie-cad.jpg" alt="Labeled CAD of the final design showing base arm, lower arm, upper arm and hook"><figcaption>CAD of the final design.</figcaption></figure>
 </div>
 <p>My part of the analysis was the lower arm. With quasi-static free body diagrams of the arm and the input gears, I found the arm needs 0.353 N·m to hold itself and the upper arm level, while the two geared motors provide 0.542 N·m (2 × 0.271 N·m, from our force-torque-power-energy measurements). That is a factor of safety of 1.54, and room for about 35 g more at the hook. In testing, the arm held about 140 g before stalling. I traced the gap to treating each arm’s mass as a single point, ignoring the rods and spacers, and to the two motors not delivering equal torque: the angled one was stronger.</p>
 <p>Risk reduction on the base arm turned up another problem, since the weight at the end of the arm lifted the output gear off the base plate. A 3D-printed holder and a hubcap inside it fixed that.</p>
 <p>On competition day N.E.S.S.I.E. scored 2,400 points, with 8 rings on the third-highest level, against a maximum potential of 3,400. Being stationary limited it to rings within reach, and next time I would use a four-bar linkage for a steadier arm.</p>
-<h3>Documents</h3>
-<ul class="docs"><li><a href="../files/MAE3-Robot-Report.pdf">Analysis report (PDF)</a></li><li><a href="../files/MAE3-NESSIE-Presentation.pptx">Final presentation (PowerPoint)</a></li></ul>
 </div>
-<a class="back" href="../projects.html">« Back to projects</a>
-</main>
+<div>
+<h5>Documents</h5>
+<ul><li><a href="../files/MAE3-Robot-Report.pdf">Analysis report (PDF)</a></li><li><a href="../files/MAE3-NESSIE-Presentation.pptx">Final presentation (PowerPoint)</a></li></ul>
+</div>
+</li></ul></main>
 </div>
 <footer><span>© 2026 Joshua Conge · <a href="mailto:joshcon2022@gmail.com">joshcon2022@gmail.com</a></span><span>Hand-written in HTML &amp; CSS.</span></footer>
 </div>
